@@ -62,7 +62,7 @@ CSTYLE = ../../utils/cstyle
 OBJS=$(SRC:.c=.o)
 LDFLAGS = -L$(LIBS_PATH)
 LDFLAGS += $(EXTRA_LDFLAGS)
-LIBS += -lpmemlog -lpmem -pthread -lm
+LIBS += -lpmemlog -lpmem -pthread -lm -lrt
 CFLAGS  = -std=gnu99
 CFLAGS += -Wall
 CFLAGS += -Werror
